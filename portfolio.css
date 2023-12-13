@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0A2342;
+    color: #fff;
+}
+
+header {
+    background-color: #0A2342;
+    color: #fff;
+    text-align: left;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#about {
+    background-color: #0A2342; 
+}
+
+#projects {
+    background-color: #0A2342; 
+}
+
+#skills {
+    background-color: #0A2342; 
+}
+
+#contact {
+    background-color: #0A2342; 
+}
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #fff;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+
+
