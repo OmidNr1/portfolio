@@ -1,5 +1,5 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #0A2342;
@@ -29,7 +29,9 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    font-size: 18px;
 }
+
 section {
     padding: 20px;
     display: flex;
@@ -39,32 +41,42 @@ section {
     min-height: 100vh;
 }
 
-#about {
+.about, .projects, .skills, .contact {
     background-color: #0A2342; 
 }
 
-#projects {
-    background-color: #0A2342; 
-}
-
-#skills {
-    background-color: #0A2342; 
-}
-
-#contact {
-    background-color: #0A2342; 
-}
-section {
-    padding: 20px;
-}
-
-h2 {
+h2, .header-text {
     color: #fff;
+    font-size: 30px; 
 }
 
 .project {
     margin-bottom: 20px;
 }
 
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
 
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 
+.skills-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+    max-width: 600px; 
+    margin: 0 auto;
+}
