@@ -13,14 +13,11 @@ header {
     padding: 20px;
 }
 
-nav {
-    text-align: right;
-}
-
 nav ul {
     list-style-type: none;
-    margin: 0;
+    text-align: right;
     padding: 0;
+    margin: 0;
 }
 
 nav li {
@@ -36,13 +33,16 @@ nav a {
 }
 
 section {
-    background-color: #0A2342;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+}
+
+.about, .projects, .skills, .contact {
+    background-color: #0A2342; 
 }
 
 h2, .header-text {
@@ -81,25 +81,45 @@ p {
     margin: 0 auto;
 }
 
+.about {
+    background-color: #0B132B; /* Updated background color */
+    padding: 20px;
+    text-align: left;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .about img {
     max-width: 100%;
     height: auto;
     margin-right: 30px;
 }
 
-.about-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .text {
     max-width: 600px;
-    text-align: left;
     color: #fff;
-    padding: 0 20px;
 }
 
 h2, p {
     margin: 0;
 }
+
+.section-bg {
+    background-color: #0B132B;
+    padding: 10px; 
+    margin: 10px 0;
+}
+
+
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
