@@ -14,8 +14,9 @@ header {
 }
 
 nav ul {
+    font-size: 60px;
     list-style-type: none;
-    text-align: right;
+    text-align: center; 
     padding: 0;
     margin: 0;
 }
@@ -32,6 +33,10 @@ nav a {
     font-size: 18px;
 }
 
+nav a:hover {
+    color: #EFEFEF; 
+}
+
 section {
     padding: 20px;
     display: flex;
@@ -43,7 +48,7 @@ section {
 
 .about, .projects, .skills, .contact {
     background-color: #0A2342; 
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px;
 }
 
@@ -63,14 +68,14 @@ h2, .header-text {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 .skills-container img {
@@ -80,14 +85,14 @@ h2, .header-text {
 }
 
 p {
-    font-size: 15px;
+    font-size: 30px;
     max-width: 100%;
     margin: 0 auto;
 }
 
 .about {
     background-color: #0B132B;
-    padding: 20px;
+    padding: 30px;
     text-align: left;
 }
 
@@ -101,7 +106,7 @@ p {
 .about img {
     max-width: 100%;
     height: auto;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 .text {
@@ -112,14 +117,128 @@ p {
 
 .section-bg {
     background-color: #0B132B;
-    padding: 10px; 
+    padding: 20px; 
     margin: 10px 0;
 }
 
-/* Media Query for screens 600 pixels and below */
 @media screen and (max-width: 600px) {
     .about img {
         margin-right: 0;
         margin-bottom: 20px;
     }
+
+    .skibbet {
+        width: 200px;
+        height: 200px;
+    }
+
+    .project {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .skills-container img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+}
+
+.skibbet {
+    width: 300px;
+    height: 300px;
+    background: url('photo_and_icons/Skibbet.png') 0 0 no-repeat;
+    animation: play 5s steps(19) infinite;
+}
+
+@keyframes play {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -9500px;
+    }
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    width: calc(50% - 20px); 
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .projects-container {
+        flex-direction: column; 
+    }
+
+    .project {
+        width: 100%; 
+    }
+}
+
+.contact {
+    background-color: #0B132B;
+    width: 80%;
+    margin: 5% auto; 
+    height: 200px;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    padding: 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact p {
+    font-size: 30px; 
+    color: #fff; 
+    margin: 10px 0; 
+}
+
+.contact a {
+    color: #fff; 
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px; 
+}
+
+.contact img {
+    max-width: 30px; 
+    height: auto;
+}
+
+.skills {
+    background-color: #0B132B; 
+    margin: 20px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: left;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; 
 }
